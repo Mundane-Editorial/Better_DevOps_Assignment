@@ -9,7 +9,11 @@ jobs:
   build:
     runs-on: ubuntu-latest
     environment: tesst
-
+    
+    env:
+      DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
+      DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
+      
     steps:
       - name: Checkout code
         uses: actions/checkout@v2

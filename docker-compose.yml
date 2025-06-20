@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   app:
-    image: ${{ secrets.DOCKER_USERNAME }}/node-js-application:latest
+    image: ${DOCKER_USERNAME}/node-js-application:latest
     ports:
       - "8080:8080"
     restart: always
