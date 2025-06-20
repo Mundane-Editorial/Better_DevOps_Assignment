@@ -8,7 +8,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    environment: tesst
+    environment: dev
 
     steps:
       - name: Checkout code
